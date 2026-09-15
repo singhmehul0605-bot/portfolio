@@ -570,24 +570,13 @@
   <div class="wrap">
     <div class="eyebrow">The Solution</div>
     <h2 class="htitle">Walking the shipped flow, screen by screen</h2>
-    <p class="lead">Recreated below from the final Figma frames — exact copy and layout, rebuilt in CSS rather than exported as pixels.</p>
+    <p class="lead">The ten screens below are the actual shipped UI, walked end to end from search results to both tickets generated.</p>
   </div>
   <div class="wrap">
     <div class="feat">
       <div class="feat-visual">
-        <div class="iphone"><div class="screen"><div class="island"></div><div class="pm">
-          <div class="pm-bar"><span>9:30</span><span>●●●</span></div>
-          <div class="pm-route">MMCT → SBC</div>
-          <div class="pm-sub">Mon, 16 Aug · 15 trains</div>
-          <div class="pm-banner"><div class="pm-b-tag">redRail Confirm</div><div class="pm-b-text">Booking 2 tickets from NDLS→BSB, and BSB→HWD for a confirm trip</div></div>
-          <div class="pm-tuple">
-            <div class="pm-train">12368 Vikramshila Exp</div>
-            <div class="pm-row">
-              <div class="pm-cell avail"><div class="p">2A ₹1,500</div><div class="c">Available</div><div class="a">Available 10</div></div>
-              <div class="pm-cell wl"><div class="p">3A ₹950</div><div class="c">Waitlist</div><div class="a">Confirm or 3x refund</div></div>
-            </div>
-          </div>
-        </div><div class="home-ind"></div></div></div>
+        <div class="iphone"><div class="screen"><img src="assets/ss-01-search-results.png" alt="Search results with redRail Confirm banner" style="width:100%;display:block;"></div></div>
+          
       </div>
       <div class="feat-text">
         <span class="priority-tag">FR-01 / FR-02 · P0</span>
@@ -600,13 +589,8 @@
 
     <div class="feat rev">
       <div class="feat-visual">
-        <div class="iphone"><div class="screen"><div class="island"></div><div class="pm">
-          <div class="pm-bar"><span>9:30</span><span>●●●</span></div>
-          <div class="pm-sheet-title"><span class="pm-check">✓</span> redRail Confirm</div>
-          <div class="pm-center-text">2 tickets · 1 seat switch at Patna Jn</div>
-          <div class="pm-spinner"></div>
-          <div class="pm-center-text" style="font-weight:600;color:var(--ink);">Finding the best confirmed ticket options for you</div>
-        </div><div class="home-ind"></div></div></div>
+        <div class="iphone"><div class="screen"><img src="assets/ss-02-loader-bottomsheet.png" alt="Loading sheet finding the best confirmed ticket options" style="width:100%;display:block;"></div></div>
+          
       </div>
       <div class="feat-text">
         <span class="priority-tag">NFR-01 · Performance</span>
@@ -618,16 +602,8 @@
 
     <div class="feat">
       <div class="feat-visual">
-        <div class="iphone"><div class="screen"><div class="island"></div><div class="pm">
-          <div class="pm-bar"><span>9:30</span><span>●●●</span></div>
-          <div class="pm-sheet-title"><span class="pm-check">✓</span> redRail Confirm</div>
-          <div class="pm-center-text" style="text-align:left;padding:0 0 8px;">2 tickets · 1 seat switch at Patna Jn</div>
-          <div class="pm-leg"><div class="leg-t"><span>Ticket 1</span><span>Refresh ↻</span></div><div class="leg-r"><span>NDLS → PTN</span><span style="color:var(--green);">2A · Avail 16</span></div></div>
-          <div class="pm-switch-chip">⇄ Change seat at Patna Jn</div>
-          <div class="pm-leg"><div class="leg-t"><span>Ticket 2</span><span>Refresh ↻</span></div><div class="leg-r"><span>PTN → HWD</span><span style="color:#8a5a10;">3A · Avail 2</span></div></div>
-          <div class="pm-cta">Book ticket</div>
-          <div class="pm-microcopy">Continue booking ticket 2 after this booking</div>
-        </div><div class="home-ind"></div></div></div>
+        <div class="iphone"><div class="screen"><img src="assets/ss-03-bottomsheet.png" alt="Bottom sheet with both legs and a single Book ticket CTA" style="width:100%;display:block;"></div></div>
+          
       </div>
       <div class="feat-text">
         <span class="priority-tag">FR-03 / FR-04 · P0</span>
@@ -638,48 +614,32 @@
       </div>
     </div>
 
+<div class="feat rev"><div class="feat-visual"><div class="iphone"><div class="screen"><img src="assets/ss-04-customer-info.png" alt="Traveller details form" style="width:100%;display:block;"></div></div></div><div class="feat-text"><span class="priority-tag">FR-05 · P0</span><div class="feat-index">04 — One passenger form, not two</div><h3>Entered once, carried across both legs</h3><p>Name, berth preference and meal choice are captured on a single traveller form. That same information carries through to the second ticket automatically — the traveller is never asked to repeat themselves for leg two.</p></div></div>
+    <div class="feat"><div class="feat-visual"><div class="iphone"><div class="screen"><img src="assets/ss-05-payment.png" alt="Payment screen for the first ticket" style="width:100%;display:block;"></div></div></div><div class="feat-text"><span class="priority-tag">FR-05 · P0</span><div class="feat-index">05 — A familiar checkout, first of two</div><h3>Paying for the first leg</h3><p>The first ticket is paid for through redRail's standard payment sheet — nothing new to learn before the flow explains what happens next.</p></div></div>
+    <div class="feat rev"><div class="feat-visual"><div class="iphone"><div class="screen"><img src="assets/ss-06-irctc-verification.png" alt="IRCTC password verification step" style="width:100%;display:block;"></div></div></div><div class="feat-text"><span class="priority-tag">FR-05 · P0</span><div class="feat-index">06 — IRCTC password, the one extra step</div><h3>Verification without losing your place</h3><p>IRCTC's own verification step sits inline in the flow rather than redirecting out to a separate app or page, so the traveller never loses context mid-booking.</p></div></div>
+    <div class="feat"><div class="feat-visual"><div class="iphone"><div class="screen"><img src="assets/ss-07-ticket-1.png" alt="First ticket confirmed" style="width:100%;display:block;"></div></div></div><div class="feat-text"><span class="priority-tag">FR-05 / FR-06 · P0</span><div class="feat-index">07 — First ticket confirmed</div><h3>Proof of progress, not just a promise</h3><p>The first PNR generates and is shown in full before the flow asks the traveller to commit to paying for leg two — confirmation, not just a claim that it's coming.</p></div></div>
     <div class="feat rev">
-      <div class="feat-visual">
-        <div class="iphone"><div class="screen"><div class="island"></div><div class="pm">
-          <div class="pm-bar"><span>9:30</span><span style="color:var(--red-deep);">06:01</span></div>
-          <div class="pm-route" style="margin-bottom:8px;">Pay ₹6,995.40</div>
-          <div class="pm-banner" style="background:var(--blue-tint);border-left-color:var(--blue);">
-            <div class="pm-b-tag" style="color:var(--blue);">You are booking Patna → Howrah</div>
-            <div class="pm-b-text">Your trip from Delhi to Howrah will be complete after this booking</div>
-          </div>
-          <div class="pm-leg" style="background:#e7f5ee;border:none;"><div class="leg-r" style="color:var(--green);"><span>Last min. deal applied</span><span>₹200 saved</span></div></div>
-        </div><div class="home-ind"></div></div></div>
-      </div>
+      <div class="feat-visual"><div class="iphone"><div class="screen"><img src="assets/ss-08-payment-ticket-2.png" alt="Payment screen reminding the user which leg they are booking" style="width:100%;display:block;"></div></div></div>
       <div class="feat-text">
         <span class="priority-tag">Trust · addresses a risk from the framing board</span>
-        <div class="feat-index">04 — Reorienting mid-flow</div>
+        <div class="feat-index">08 — Reorienting mid-flow</div>
         <h3>Reminding the user which leg they're on</h3>
         <p>By the time the user reaches payment for the second ticket, they've already paid once and left the search context. A short reminder banner re-anchors them: which leg this charge covers, and that it completes the full journey.</p>
       </div>
     </div>
 
-    <div class="feat">
-      <div class="feat-visual">
-        <div class="iphone"><div class="screen"><div class="island"></div><div class="pm">
-          <div class="pm-tabs"><div class="pm-tab on">Ticket 1<br><span style="font-weight:500;font-size:8px;">NDLS → PTN</span></div><div class="pm-tab">Ticket 2<br><span style="font-weight:500;font-size:8px;">PTN → HWD</span></div></div>
-          <div class="pm-pnr">PNR: 1234567890 · Updated 1 min ago</div>
-          <div class="pm-passenger"><span>Mehul Singh<br><span style="font-size:8px;color:var(--body);">Side lower · Non-veg</span></span><span class="seat">B2 62</span></div>
-          <div class="pm-passenger"><span>Ishan Jalan<br><span style="font-size:8px;color:var(--body);">Side lower · Non-veg</span></span><span class="seat">B2 63</span></div>
-          <div class="pm-center-text" style="text-align:left;padding-top:8px;font-size:9px;">Chart not prepared — expected 02:30 PM, 18 Jan.</div>
-        </div><div class="home-ind"></div></div></div>
-      </div>
+<div class="feat rev"><div class="feat-visual"><div class="iphone"><div class="screen"><img src="assets/ss-09-irctc-verification-ticket-2.png" alt="IRCTC verification for the second ticket" style="width:100%;display:block;"></div></div></div><div class="feat-text"><span class="priority-tag">FR-05 · P0</span><div class="feat-index">09 — Verifying the second leg</div><h3>The same check, quietly repeated</h3><p>IRCTC verification runs again for the second ticket, using the same inline pattern as the first — consistent rather than novel, so nothing about leg two feels like starting over.</p></div></div>
+    <div class="feat rev">
+<div class="feat-visual"><div class="iphone"><div class="screen"><img src="assets/ss-10-both-tickets-generated.png" alt="Both tickets generated, shown as tabs on one screen" style="width:100%;display:block;"></div></div></div>
       <div class="feat-text">
         <span class="priority-tag">FR-05 / FR-06 · P0</span>
-        <div class="feat-index">05 — Two PNRs, presented as one trip</div>
+        <div class="feat-index">10 — Two PNRs, presented as one trip</div>
         <h3>Tabs, not two separate ticket pages</h3>
         <p>Each leg generates its own PNR, chart status, and seat map — but they live behind two tabs of one ticket detail screen, so the traveller never has to hunt across "My Bookings" for the second half of their own journey.</p>
       </div>
     </div>
   </div>
-  <div class="wrap">
-    <div class="recreation-note">⚠️ The five screens above are rebuilt in HTML/CSS from the final Figma frames — exact copy, layout and states, not exported screenshots.</div>
-  </div>
-</section>
+  </section>
 
 <section id="system" class="divider reveal">
   <div class="wrap">
